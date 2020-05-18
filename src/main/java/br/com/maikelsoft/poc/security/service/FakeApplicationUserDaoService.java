@@ -29,7 +29,7 @@ public class FakeApplicationUserDaoService implements ApplicationUserRepository{
 	private List<ApplicationUser> getApplicationUsers(){
 		List<ApplicationUser> users = Lists.newArrayList(
 				new ApplicationUser(ApplicationUserRole.STUDENT.getGrantedAuthorities(), "benne", passEncoder.encode("123")),
-				new ApplicationUser(ApplicationUserRole.ADMIN.getGrantedAuthorities(), "joaquim", passEncoder.encode("123")),
+				new ApplicationUser(ApplicationUserRole.ADMIN.getGrantedAuthorities(), "jerry", passEncoder.encode("123")),
 				new ApplicationUser(ApplicationUserRole.ADMINTRAINEE.getGrantedAuthorities(), "tom", passEncoder.encode("123"))
 		);
 		return users;
